@@ -27,8 +27,8 @@ for value in iterate_nested_lists(nested_list):
 ## Example Code
 ```
 def iterate_Hamilton_list(Hamilton):
-  for actor in Hamilton:
-    yield from actor
+  for sublist in Hamilton:
+    yield from sublist
 
 #nested list
 Hamilton = [["Hamilton", "Burr"], 
@@ -36,6 +36,7 @@ Hamilton = [["Hamilton", "Burr"],
             ["Angelica", "Eliza", "Peggy", "Mariah"],
             ["Philip", "Madison"]]
 
+#iterate through nested list and print element of each sublist
 for character in iterate_Hamilton_list(Hamilton):
   print(character)
 ```
@@ -56,9 +57,16 @@ Mariah
 Philip
 Madison
 ```
-![code](https://github.com/trixiahorner/yield_from/blob/main/images/yield_from.png?raw=true)
 
 ## Advantages
 - Readability: Simplifies nested iterations, making the code more readable.
 - Conciseness: Reduces the amount of code required for nested loops.
 - Efficiency: Streamlines the process of iterating through complex data structures.
+
+<br>
+<br>
+
+![code](https://github.com/trixiahorner/yield_from/blob/main/images/hamilton.png?raw=true)
+
+
+
