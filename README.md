@@ -7,8 +7,8 @@ This repository demonstrates how to use the '*yield from*' statement in Python t
 Using the '*yield from*' statement to iterate through a nested list is a powerful and elegant way to flatten the structure and yield elements from sublists as if they were part of a single list.
 
 ## Explanation
-The yield from statement is used to delegate the yielding process to another generator or iterable. 
-In this example, yield from sublist iterates through each sublist within the nested_list, yielding each item one by one.
+The '*yield from*' statement is used to delegate the yielding process to another generator or iterable. 
+In this example, *yield from sublist* iterates through each sublist within the nested_list, yielding each item one by one.
 ```
 def iterate_nested_lists(nested_list):
     for sublist in nested_list:
